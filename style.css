@@ -1,0 +1,26 @@
+/* 
+Theme Name: Peter Miller
+Theme URI: https://nikolashaug.com/wpthemes/petem
+Author: Nikolas Haug
+Author URI: https://nikolashaug.com
+Description: A simple free theme for artists and musicians
+Version: 1.0
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/* TEST styles */
+/* Used in a div with inline style tag - no img tag between divs */
+.bg-img__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
