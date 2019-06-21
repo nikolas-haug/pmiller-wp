@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<h1>Archive-Band.php</h1>
+<h1>Archive-Show.php</h1>
 
 <?php while (have_posts()) : the_post(); ?>
 
