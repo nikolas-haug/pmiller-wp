@@ -12,16 +12,6 @@
 
         <?php while (have_posts()) : the_post(); ?>
 
-        <!-- <div class="bands__main--item">
-            <a href="<?php the_permalink(); ?>">
-                <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="<?php the_title(); ?>">
-                Image Overlay for Hover
-                <div class="band-archive__image-overlay">
-                    <p><?php the_title(); ?></p>
-                </div>
-            </a>
-        </div> -->
-
         <div class="band-archive__image">
             <a href="<?php the_permalink(); ?>">
                 <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="<?php the_title(); ?>">

@@ -61,6 +61,7 @@
 
 /* New Layout for Single Band Page */
 .band-single__container {
+    margin-top: 50px;
     height: 100%;
     background: peachpuff;
     overflow: scroll;

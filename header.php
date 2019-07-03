@@ -18,18 +18,19 @@
     <div class="main__nav">
         <!-- Add line height to center vertically -->
         <div class="main__logo">
-            <a href="#!">
+            <a href="<?php echo site_url('')?>">
                 <!-- TO DO - Update path to use Uploads folder -->
                 <img src="<?php echo site_url('wp-content/themes/petem/assets/skullimagesmall.jpg')?>" alt="navigation logo">
             </a>
         </div>
         <div class="main__collapse">
             <ul class="main__nav-items">
-                <li><a href="#!">Main</a></li>
-                <li><a href="#!">About</a></li>
-                <li><a href="#!">Shows</a></li>
-                <li><a href="#!">Bands</a></li>
-                <li><a href="#!">Production</a></li>
+                <li><a href="<?php echo site_url('')?>">Home</a></li>
+                <li><a href="<?php echo site_url('/about')?>">About</a></li>
+                <li><a href="<?php echo site_url('bands')?>">Bands</a></li>
+                <li><a href="<?php echo site_url('/shows')?>">Shows</a></li>
+                <li><a href="<?php echo site_url('/commercials')?>">Commercials</a></li>
+                <li><a href="<?php echo site_url('/productions')?>">Productions</a></li>
             </ul>
         </div>
     </div>
