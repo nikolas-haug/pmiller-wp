@@ -1,0 +1,183 @@
+/* Bands CSS */
+
+/* Many Bands Page */
+
+.band-archive__container {
+    height: 100%;
+}
+
+.band-archive__header {
+    padding: 2.4em 0;
+    text-align: center;
+    background: coral;
+}
+
+.band-archive__image-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 2em;
+    background: skyblue;
+}
+
+.band-archive__image {
+    position: relative;
+    width: 300px;
+    height: 225px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.band-archive__image a img {
+    width: 100%;
+    height: 100%;
+}
+
+.band-archive__image-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.band-archive__image-overlay:hover {
+    opacity: 1;
+}
+
+
+/* New Layout for Single Band Page */
+.band-single__container {
+    height: 100%;
+    background: peachpuff;
+    overflow: scroll;
+}
+
+.band-single__sub-container {
+    background: blanchedalmond;
+    margin: 0 5.5em;
+}
+
+.band-single__header {
+    padding: 2em 0 0 2em;
+}
+
+.band-single__header a {
+    margin-top: 0.5em;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.band-single__content {
+    display: flex;
+}
+
+.band-single__content-media,
+.band-single__content-meta {
+    flex: 1;
+}
+
+.band-single__content-media {
+    text-align: center;
+    padding: 1em 2em;
+    /* For IE */
+    min-width: 1px;
+
+}
+
+.band-single__content-media iframe {
+    width: 100%;
+}
+
+.band-single__content-meta {
+    padding: 1em 5em 0 0.5em;
+}
+
+.band-single__meta-image {
+    width: 150px;
+    height: 100px;
+    border: 1px solid #333;
+    margin-bottom: 1.3em;
+}
+
+.band-single__meta-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.band-single__meta-social {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+}
+
+.meta-social__list {
+    display: flex;
+}
+
+.meta-social__list a {
+    margin-right: 2em;
+    text-decoration: none;
+    color: tomato;
+    transition: color 0.4s;
+}
+
+.meta-social__list a:hover {
+    color: skyblue;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 900px) {
+    .band-archive__image-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5em;
+    }
+
+    .band-archive__image {
+        margin: 0.8em;
+    }
+
+    .band-single__sub-container {
+        margin: 0 1.5em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .band-single__container {
+        padding: 0 5%;
+    }
+
+    .band-single__sub-container {
+        margin: 0 0.5em;
+    }
+
+    .band-single__header {
+        padding-left: 0.5em;
+    }
+
+    .band-single__content {
+        flex-direction: column;
+    }
+
+    .band-single__content-meta {
+        padding: 0.5em;
+    }
+
+    .band-single__content-media {
+        order: 1;
+        padding: 0.5em;
+    }
+}

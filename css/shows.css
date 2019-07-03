@@ -1,0 +1,61 @@
+/* Shows CSS */
+
+.shows-archive__header {
+    text-align: center;
+    padding: 1.5em 0;
+    background: gold;
+}
+
+.shows-archive__container {
+    display: flex;
+    padding: 0.5em 2.5em;
+    background: papayawhip;
+}
+
+.shows-archive__content-header {
+    padding: 0.5em 0;
+}
+
+.shows-archive__content-header p {
+    padding: 0.5em 0;
+}
+
+.shows-archive__content {
+    flex: 1;
+    margin: 1.5em;
+}
+
+/* For the Bandsintown Widget */
+/* TO DO - Update this with general styles for fonts, colors etc. */
+
+.bit-widget-container {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+.bit-top-track-button,
+.bit-nav-bar-container,
+.bit-event-lists {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bit-widget .bit-layout-ipad {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 975px) {
+    .shows-archive__container {
+        padding: 0.5em;
+    }
+
+    .shows-archive__content {
+        margin: 0.5em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .shows-archive__container {
+        flex-direction: column;
+    }
+}
