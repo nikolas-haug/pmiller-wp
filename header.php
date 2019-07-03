@@ -20,7 +20,7 @@
         <div class="main__logo">
             <a href="#!">
                 <!-- TO DO - Update path to use Uploads folder -->
-                <img src="wp-content/themes/petem/assets/skullimagesmall.jpg" alt="navigation logo">
+                <img src="<?php echo site_url('wp-content/themes/petem/assets/skullimagesmall.jpg')?>" alt="navigation logo">
             </a>
         </div>
         <div class="main__collapse">

@@ -1,20 +1,40 @@
 <?php get_header(); ?>
 
-<h1>Archive-Band.php</h1>
 
-<?php while (have_posts()) : the_post(); ?>
+<!-- Main Band Images -->
+<div class="band-archive__container">
 
-    <h2><?php the_title(); ?></h2>
-
-    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
-
-    <p><?php the_excerpt() ?></p>
-
-    <div>
-        <?php the_content(); ?>
+    <div class="band-archive__header">
+        <h1>Archive-Band.php</h1>
     </div>
 
-<? endwhile; wp_reset_query(); ?>
+    <div class="band-archive__image-container">
 
+        <?php while (have_posts()) : the_post(); ?>
+
+        <!-- <div class="bands__main--item">
+            <a href="<?php the_permalink(); ?>">
+                <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="<?php the_title(); ?>">
+                Image Overlay for Hover
+                <div class="band-archive__image-overlay">
+                    <p><?php the_title(); ?></p>
+                </div>
+            </a>
+        </div> -->
+
+        <div class="band-archive__image">
+            <a href="<?php the_permalink(); ?>">
+                <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>" alt="<?php the_title(); ?>">
+
+                <div class="band-archive__image-overlay">
+                    <p><?php the_title(); ?></p>
+                </div>
+            </a>
+        </div>
+
+        <?php endwhile; wp_reset_query(); ?>
+
+    </div>
+</div>
 
 <?php get_footer(); ?>

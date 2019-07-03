@@ -1,4 +1,4 @@
-/* Bands CSS */
+/* Stylesheet for bands page */
 
 /* Many Bands Page */
 
@@ -8,6 +8,7 @@
 
 .band-archive__header {
     padding: 2.4em 0;
+    margin-top: 50px;
     text-align: center;
     background: coral;
 }
@@ -16,17 +17,17 @@
     display: flex;
     justify-content: center;
     height: 100%;
-    padding: 2em;
+    padding: 1.5em 0.5em;
     background: skyblue;
 }
 
 .band-archive__image {
     position: relative;
-    width: 300px;
-    height: 225px;
+    width: 200px;
+    height: 200px;
     margin: 20px;
-    border-radius: 15px;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     overflow: hidden;
 }
 
@@ -49,6 +50,8 @@
     background: rgba(255, 255, 255, 0.7);
     opacity: 0;
     transition: all 0.4s;
+    letter-spacing: 0.8px;
+    color: #000;
 }
 
 .band-archive__image-overlay:hover {
