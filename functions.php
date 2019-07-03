@@ -11,7 +11,6 @@ function petem_setup()
     wp_enqueue_style('shows', get_theme_file_uri('/css/shows.css', NULL,  1.0));
     wp_enqueue_style('commercials', get_theme_file_uri('/css/commercials.css', NULL,  1.0));
     wp_enqueue_script('main', get_theme_file_uri('/js/main.js'), NULL, 1.0, true);
-    wp_enqueue_script('google-fonts', 'https://fonts.googleapis.com/css?family=Hind&display=swap');
     wp_enqueue_script('prefix-font-awesome', 'https://kit.fontawesome.com/4685121e43.js');
 }
 

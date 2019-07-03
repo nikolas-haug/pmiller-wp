@@ -17,6 +17,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     src: local('VCR OSD Mono'), url('assets/VCR_OSD_MONO_1.001[1].woff') format('woff');
 }
 
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
+
 :root {
     --primary-font: 'VCR OSD Mono', 'Lucida Console', Monaco, monospace;
     --secondary-font: 'Hind', sans-serif;
