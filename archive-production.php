@@ -1,18 +1,44 @@
 <?php get_header(); ?>
 
-<h1>Archive-Production.php</h1>
+<div class="fixed__bg">
+    <div class="fixed__bg-image archive-production__bg-image"></div>
+</div>
 
-<?php while (have_posts()) : the_post(); ?>
+<!-- Main grid wrapper -->
+<div class="archive-production__container">
 
-    <h2><?php the_title(); ?></h2>
+    <!-- Scrolling content column -->
+    <div class="archive-production__content">
 
-    <div>
-        <?php the_content(); ?>
+        <!-- Scrolling content header -->
+        <div class="archive-production__header">
+            <h1>Production Header</h1>
+            <p class="archive-production__subtext">Even the all-powerful Pointing has no control about the blind texts
+            </p>
+        </div>
+
+        <?php while (have_posts()) : the_post(); ?>
+
+        <!-- Posted content stacked here -->
+        <div class="archive-production__content-title">
+            <h4><?php the_title(); ?></h4>
+        </div>
+        <div class="archive-production__content-media">
+            <!-- Content can be img or iframe -->
+            <?php the_content(); ?>
+        </div>
+        <div class="archive-production__content-excerpt">
+            <p><?php the_excerpt(); ?></p>
+        </div>
+        <!-- end single post content -->
+
+        <? endwhile; wp_reset_query(); ?>
+
+        <!-- end scrolling content -->
     </div>
-    
-    <p><?php the_excerpt() ?></p>
-    
-<? endwhile; wp_reset_query(); ?>
+
+    <!-- end grid wrapper -->
+</div>
 
 
 <?php get_footer(); ?>

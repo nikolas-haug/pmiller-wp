@@ -4,10 +4,6 @@
 
     <div class="comm-single__sub-container">
 
-        <div class="comm-single__header">
-            <h1>Single Commercial</h1>
-        </div>
-
         <?php while(have_posts()) : the_post(); ?>
 
         <div class="comm-single__content">

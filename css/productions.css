@@ -1,0 +1,77 @@
+/* Production Page CSS */
+
+/* Fixed Background */
+
+.archive-production__bg-image {
+    background: url('https://source.unsplash.com/1200x1000');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Main content section */
+
+.archive-production__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    /* grid-gap: 1.4em; */
+    margin-top: 5em;
+}
+
+.archive-production__content {
+    grid-column: 3 / span 8;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5em;
+    background: rgba(242, 243, 244, 0.85);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.archive-production__content-media img, 
+.archive-production__content-media iframe {
+    min-width: 1px;
+    max-width: 100%;
+}
+
+/* Main content header */
+
+.archive-production__header {
+    font-size: 1em;
+    text-align: center;
+    padding: 1.5em;
+}
+
+.archive-production__subtext {
+    font-size: 0.8em;
+}
+
+/* Main posts */
+
+.archive-production__content-title {
+    padding: 0.5em 0 0.5em 2.2em;
+}
+
+.archive-production__content-media {
+    padding: 1.2em;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+.archive-production__content-excerpt {
+    padding: 1.4em 2.2em;
+}
+
+/* Media queries for main blog page */
+
+@media (max-width: 700px) {
+    .archive-production__content {
+        grid-column: 2 / span 10;
+    }
+}
+
+@media (max-width: 548px) {
+    .archive-production__content {
+        grid-column: span 12;
+        margin: 1em 1.5em 5.5em 1.5em;
+    }
+}
