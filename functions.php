@@ -5,10 +5,13 @@ function petem_setup()
 {
     wp_enqueue_style('style', get_stylesheet_uri(), NULL, 1.0);
     // wp_enqueue_style('normalize', get_theme_file_uri('/css/normalize.css'), NULL, 1.0);
+    wp_enqueue_style('navbar', get_theme_file_uri('/css/navbar.css', NULL,  1.0));
+    wp_enqueue_style('landing', get_theme_file_uri('/css/landing.css', NULL,  1.0));
     wp_enqueue_style('bands', get_theme_file_uri('/css/bands.css', NULL,  1.0));
     wp_enqueue_style('shows', get_theme_file_uri('/css/shows.css', NULL,  1.0));
     wp_enqueue_style('commercials', get_theme_file_uri('/css/commercials.css', NULL,  1.0));
     wp_enqueue_script('main', get_theme_file_uri('/js/main.js'), NULL, 1.0, true);
+    wp_enqueue_script('google-fonts', 'https://fonts.googleapis.com/css?family=Hind&display=swap');
     wp_enqueue_script('prefix-font-awesome', 'https://kit.fontawesome.com/4685121e43.js');
 }
 
