@@ -1,18 +1,34 @@
 <?php get_header(); ?>
 
-<h1>Single-Commercial.php</h1>
+<div class="comm-single__container">
 
-<?php while (have_posts()) : the_post(); ?>
+    <div class="comm-single__sub-container">
 
-    <h2><?php the_title(); ?></h2>
+        <div class="comm-single__header">
+            <h1>Single Commercial</h1>
+        </div>
 
-    <div>
-        <?php the_content(); ?>
-    </div>
+        <?php while(have_posts()) : the_post(); ?>
+
+        <div class="comm-single__content">
+            <div class="comm-single__content-media">
+                <!-- Video goes here -->
+                <?php the_content(); ?>
+            </div>
+            <div class="comm-single__content-meta">
+                <div class="comm-single__meta-title">
+                    <h1><?php the_title(); ?></h1>
+                </div>
+                <div class="comm-single__meta-excerpt">
+                    <p><?php the_excerpt(); ?></p>
+                </div>
+            </div>
+        </div>
     
-    <p><?php the_excerpt() ?></p>
+        <?php endwhile; wp_reset_query(); ?>
 
-<? endwhile; wp_reset_query(); ?>
+    </div>
 
+</div>
 
 <?php get_footer(); ?>

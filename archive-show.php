@@ -1,18 +1,31 @@
 <?php get_header(); ?>
 
-<h1>Archive-Show.php</h1>
+<div class="shows-archive__header">
+    <h1>Upcoming Shows</h1>
+</div>
 
-<?php while (have_posts()) : the_post(); ?>
+<div class="shows-archive__container">
 
-    <h2><?php the_title(); ?></h2>
+    <?php while (have_posts()) : the_post(); ?>
 
-    <div>
-        <?php the_content(); ?>
+    <div class="shows-archive__content">
+        <div class="shows-archive__content-header">
+            <!-- Band -->
+            <h1><?php the_title(); ?></h1>
+            <!-- Optional description -->
+            <?php if(the_excerpt()) { ?>
+            <p><?php the_excerpt(); ?></p>
+            <?php } ?>
+        </div>
+        <div class="shows-archive__content-listing">
+            <!-- Put Bandsintown info here -->
+            <?php the_content(); ?>
+        </div>
     </div>
-    
-    <p><?php the_excerpt() ?></p>
 
-<? endwhile; wp_reset_query(); ?>
+    <? endwhile; wp_reset_query(); ?>
+
+</div>
 
 
 <?php get_footer(); ?>

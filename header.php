@@ -18,7 +18,7 @@
     <div class="main__nav">
         <!-- Add line height to center vertically -->
         <div class="main__logo">
-            <a href="<?php echo site_url('')?>">
+            <a href="#!">
                 <!-- TO DO - Update path to use Uploads folder -->
                 <img src="<?php echo site_url('wp-content/themes/petem/assets/skullimagesmall.jpg')?>" alt="navigation logo">
             </a>

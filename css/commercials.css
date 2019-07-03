@@ -4,6 +4,7 @@
 
 .comm-archive__header {
     text-align: center;
+    margin-top: 50px;
     padding: 1.5em 0;
     background: gold;
 }
@@ -52,6 +53,7 @@
 /* Commercial single */
 
 .comm-single__container {
+    margin-top: 50px;
     height: 100%;
     background: peachpuff;
     overflow: scroll;
